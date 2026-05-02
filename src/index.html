@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Trendify — Shop Smarter</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Discover amazing products at unbeatable prices. Shop electronics, fashion, home & garden items with fast shipping and secure checkout." />
+    <meta name="theme-color" content="#6366f1" />
+    <base href="/">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%230ea5e9'/><stop offset='100%25' stop-color='%236366f1'/></linearGradient></defs><rect width='100' height='100' rx='24' fill='url(%23g)'/><path d='M24 34h52v11H58v30H42V45H24z' fill='%23fff'/><circle cx='78' cy='22' r='8' fill='%23fbbf24'/><circle cx='78' cy='22' r='3' fill='%23fff'/></svg>" />
+    <!-- Remix Icon CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        @keyframes logoPulse {
+            0%, 100% { transform: scale(1); box-shadow: 0 15px 40px -10px rgba(99, 102, 241, 0.5); }
+            50% { transform: scale(1.05); box-shadow: 0 20px 50px -10px rgba(99, 102, 241, 0.7); }
+        }
+        .loading-logo {
+            animation: logoPulse 1.6s ease-in-out infinite;
+        }
+    </style>
+
+</head>
+
+<body>
+    <app-root>
+        <div style="min-height: 100vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #f8fafc 0%, #eff6ff 100%); font-family: system-ui, sans-serif;">
+            <div style="text-align: center;">
+                <div class="loading-logo" style="width: 72px; height: 72px; margin: 0 auto 20px; border-radius: 20px; background: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%); display: flex; align-items: center; justify-content: center; position: relative;">
+                    <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 34h52v11H58v30H42V45H24z" fill="#fff"/>
+                    </svg>
+                    <div style="position: absolute; top: -4px; right: -4px; width: 18px; height: 18px; border-radius: 50%; background: #fbbf24; border: 3px solid #fff;"></div>
+                </div>
+                <div style="font-size: 22px; font-weight: 800; background: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%); -webkit-background-clip: text; background-clip: text; color: transparent; letter-spacing: -0.02em;">Trendify</div>
+                <div style="margin-top: 4px; font-size: 13px; color: #64748b; font-weight: 500;">Loading your shopping experience…</div>
+            </div>
+        </div>
+    </app-root>
+</body>
+
+</html>
